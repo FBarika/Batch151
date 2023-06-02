@@ -1,0 +1,18 @@
+package practice.b151practices.day16practice;
+
+public class Opel extends Araba{
+    protected String hiz = "Opel arabalar max 220 km hiz yaparlar.";
+    protected String marka ="Opel";
+    protected String sirketMerkezi="Almanya";
+
+    protected void motor(){
+        System.out.println("OPEL ARABALAR OPEL MARKA MOTOR KULLANIR.");
+    }
+
+    protected void garanti(){
+        System.out.println("OPEL ARABALAR 2 YIL GARANTILIDIR.");
+    }
+
+
+
+}

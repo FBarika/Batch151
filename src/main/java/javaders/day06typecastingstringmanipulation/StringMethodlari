@@ -1,0 +1,79 @@
+
+                  STRING METHODLARI
+
+ 1)toUpperCase() :  i)Tüm harfleri büyük harfe cevirir.
+                    ii)Bize String return eder.
+
+ 2)toLowerCase()  : i) Tüm harfleri kücük harf yapar.
+                    ii) Bize String return eder.
+
+ 3)charAt(0)  :     i) Bize data daki ilk karakteri döndurur.
+                    ii)index ile calisir.
+                    iii)charAt() methodunu return eder.
+ 4) lenght()   :    i) bir datadaki karakter sayisini bize verir.
+                    ii) int bir deger döndurur.
+
+ 5)substring():     iki kullanimi vardir.
+                  1)  substring(a,b)
+                    i) Baslangic ve bitis index i verilirse baslangic indexi dahil bitis indexi haric yazdirir.
+                    ii)Metnin ortasindan data almamizi saglar.
+                  2)  substring(baslangicIndexi)
+                    i)String in verilen index ten sonuna kadar alinmasini saglar
+                    ii) bu method bize String döndürür.
+ 6)a.contains() :   i)bir data var mi yok mu diye bakar
+                    ii) bize boolean deger döndürür.
+
+
+ 7) startsWith() : Metnin bas kisminin istenilen dizi(1 veya
+                 daha fazla karakter) ile eslesip eslesmedigini(baslayip baslamadigini)
+                 kontrol eder.Sonucu boolean dir
+                 ("abcd",x) ilk x karakteri at string abcd ile basliyor mu (ikili yazma)
+                  bu da boolean sepetine konulmali.
+
+  8) endsWith () : Metnin bellirli bir datayla bitip bitmedigini verir
+                 Bize boolean bir sonuc dondurur
+                 Tek karakterde , coklu karakterde kullanilabilir
+
+  9) replace ()  : Metnin icerisindeki belirli bir datanin yerine verilen diger datayi yerlestirir
+                 String bir data dondurur
+                 tekli karakterler ile de coklu karakterler ile de calisir
+                 Ancak her iki taraftada " "  ya da  her iki taraftada ' ' kullanilmalidir.
+
+  10) replaceAll(): Bir grup datayi degistirmek icin kullanilir. tüm rakamlar tüm harfler tüm harfve rakamlari sunla degistir gibi
+                 Bir grup datayi ifade edebilmek icin Regular
+                 Expression (Regex) kullanilir
+                 En cok kullanilan Regexler:
+                         1) Tüm rakamlar ==>[0-9]
+                         2) Tüm kucuk harfler ==>[a-z]
+                         3) Tüm buyuk harfler ==> [A-Z]
+                         4) Tüm Harfler ==>[a-zA-Z]
+                         5) Tüm harfler ve rakamlar ==>[a-zA-Z0-9]
+                         6) Tüm sesli harfler ==>[aeiouAEIOU]
+                         7) Tüm noktalama isaretleri ve semboller ==> [\\p{Punct}]
+
+                         ^ ==> den farkli, haricinde
+                         1) Tüm rakamlar ==>[^0-9]
+                         2) Tüm kucuk harfler ==>[^a-z]
+                         3) Tüm buyuk harfler ==> [^A-Z]
+                         4) Tüm Harfler ==>[^a-zA-Z]
+                         5) Tüm harfler ve rakamlar ==>[^a-zA-Z0-9]
+                         6)Tüm sesli harfler ==>[^aeiouAEIOU]
+                         7) Tüm noktalama isaretleri ve semboller ==> [^\\p{Punct}] ya da
+                           [\\P{P}] ==> tüm semboller noktalama isaretleri haric demektir.
+  11) replaceFirst() : replace() ile ayni isi yapmakkla birlikte ilk gordugu datayi degistirir.
+
+  12) trim () : Bir String'de bastaki ve sondaki space karakterlerini siler, ortadaki
+                space karakterlerine dokunmaz.
+  13) split() : split methodu kelimeyi cümleyi bölmeye yariyor.kullandigimiz karakter kaybolarak o karakterden ikiye böler.
+                parcaladiktan sonra ikiye bölünce birinci  bölüm ikinci bölüm mü [] parantezin icine yaziyoruz.mesela [1]
+
+  14)isEmpty() :isEmpty () methodu String datanin icerisinde hicbir sey yoksa true döndürür.
+                        Javada space de bir karakter oldugu icin false döndürür.Bos mu dolu mu diye bakar.
+  15)isBlank () :isBlank() ==> space+hiclik ise True döndürür.
+                         String bir datanin bos mu dolu mu olduguna bakar.isEmpty den farkli space varsa yine true döndürür.
+  16)indexOf() :Verilen karakter veya karakterlerin ilk görünümünün indexini verir.
+                int bir deger döndürür.
+                Coklu data icin kullanildiginda ilk gördügü datanin ilk gördugü karakterin indexini verir.
+                Olmayan bir karakterin index i sorulursa bize -1 döndürür.
+  17)lastIndexOf ():lastIndexOf() Verilen String bir datada istenilen degerin son görünümünün index ini verir.
+                    Olmayan bir karakter sorgulanirsa -1 döndürür.
